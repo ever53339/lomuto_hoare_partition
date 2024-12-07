@@ -1,0 +1,8 @@
+- For quick select (and quick sort), the key is the partition algorithm used.
+- Two commonly used partition algorithms are: lomuto partition and hoare partition
+    - lomuto is simpler and easier to implement,  https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
+    - hoare is more efficienct, https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme
+    - my understanding is that lomuto scans the array from one side to the other, while hoare scan the array from two ends towards the middle
+- Notes for the implementations
+    - The implementations find the kth smallest element (ascending order). For kth biggest element, reverse the all comparison operators with `pivot` .
+    - The `k` parameter in the `quickselection` function is actually the index of the element to be selected. For example, if the 5th element is to be selected, `k` should 4.
